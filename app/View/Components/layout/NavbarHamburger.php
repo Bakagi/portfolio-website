@@ -22,6 +22,6 @@ class NavbarHamburger extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.layout.navbar-hamburger');
+        return view('layout.navbar-hamburger');
     }
 }
