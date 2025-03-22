@@ -14,11 +14,8 @@
         
     </head>
     <body class="antialiased text-gray-800 dark:text-gray-200">
-       
-        <x-navbar></x-navbar>
+        <x-layout.navbar></x-layout.navbar>
         {{ $slot }}
-        <footer>
             <x-layout.footer></x-layout.footer>
-        </footer>
     </body>
 </html>
