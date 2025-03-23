@@ -1,6 +1,7 @@
 <x-app-layout>
-    <x-Home.hero> </x-Home.hero>
-    <x-Home.membership></x-Home.membership>
-    <x-Home.about></x-Home.about>
-    <x-Home.contact></x-Home.contact>
+    <x-home.hero> </x-home.hero>
+    <x-home.membership></x-home.membership>
+    <x-home.about></x-home.about>
+    <x-home.contact></x-home.contact>
 </x-app-layout>
+

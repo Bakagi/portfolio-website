@@ -7,7 +7,7 @@ use App\Mail\ContactMail;
 use Illuminate\Support\Facades\Mail;
 
 Route::get('/', function () {
-    return view('Home');
+    return view('home');
 });
 
 Route::get('/contact', [ContactController::class, 'showForm'])->name('contact.form');
