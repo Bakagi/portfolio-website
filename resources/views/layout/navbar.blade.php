@@ -31,12 +31,16 @@
                   id="navbarCollapse"
                   class="absolute right-4 top-full w-full max-w-[250px] rounded-lg bg-white py-5 px-6 shadow lg:static lg:block lg:w-full lg:max-w-full lg:shadow-none dark:bg-dark-2 lg:dark:bg-transparent"
                   >
-                  <ul class="text-xs font-medium text-dark py-2 flex hover:text-primary dark:text-gray-200 lg:inline-flex lg:ml-6 xl:ml-12">
-                     <li><a href="#hero">Hero</a></li>
-                     <li><a href="#membership">Membership</a></li>
-                     <li><a href="#about">About</a></li>
-                     <li><a href="#contact">Contact</a></li>
-                  </ul>
+                  <ul class="block lg:flex lg:items-center">
+                     @foreach($navigationItems as $item)
+                       <x-layout.navbar-item :href="$item['href']">{{ $item['label'] }}</x-layout.navbar-item>
+                     @endforeach
+       
+                     <div class="ml-0 lg:ml-10 xl:ml-16 relative top-1">
+                       <div class="g-ytsubscribe" data-channelid="UC_UMEcP_kF0z4E6KbxCpV1w" data-layout="default"
+                            data-count="default"></div>
+                     </div>
+                   </ul>
                </nav>
             </div>
             <div class="justify-end hidden pr-16 sm:flex lg:pr-0">
