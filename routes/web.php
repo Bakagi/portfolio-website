@@ -10,9 +10,6 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/about', function () {
-    return view('components.home.about');
-});
 
 Route::get('/contact', [ContactController::class, 'showForm'])->name('contact.form');
 
