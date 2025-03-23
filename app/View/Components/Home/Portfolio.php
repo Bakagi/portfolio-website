@@ -21,6 +21,6 @@ class Portfolio extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.Home.portfolio');
+        return view('components.home.portfolio');
     }
 }

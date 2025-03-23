@@ -21,6 +21,6 @@ class VideoTutorials extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.Home.video-tutorials');
+        return view('components.home.video-tutorials');
     }
 }
