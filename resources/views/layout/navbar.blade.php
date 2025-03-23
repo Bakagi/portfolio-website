@@ -32,12 +32,10 @@
                   class="absolute right-4 top-full w-full max-w-[250px] rounded-lg bg-white py-5 px-6 shadow lg:static lg:block lg:w-full lg:max-w-full lg:shadow-none dark:bg-dark-2 lg:dark:bg-transparent"
                   >
                   <ul class="block lg:flex">
-                    @foreach ($navigationItems as $item)
-                    <x-layout.navbar-item :href="$item['href']" >
-                        {{ $item['label'] }}
-                    </x-layout.navbar-item>
-                        
-                    @endforeach
+                     <li><a href="#hero">Hero</a></li>
+                     <li><a href="#membership">Membership</a></li>
+                     <li><a href="#about">About</a></li>
+                     <li><a href="#contact">Contact</a></li>
                   </ul>
                </nav>
             </div>
